@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUESTFILENAME} !-d
+RewriteCond %{REQUESTFILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
